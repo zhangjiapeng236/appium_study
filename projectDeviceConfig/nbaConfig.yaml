@@ -1,0 +1,83 @@
+192.168.147.101:5555:
+  udid: "192.168.147.101:5555"
+  port: "4725"
+  platformName: "Android"
+  platformVersion: "7.1.1"
+  app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
+  appPackage: "com.nbaimd.gametime.nba2011"
+  appActivity: "com.neulion.nba.ui.activity.SplashActivity"
+  deviceName: "EmulatorPhone"
+
+192.168.147.102:5555:
+  udid: "192.168.147.102:5555"
+  port: "4726"
+  platformName: "Android"
+  platformVersion: "7.1.1"
+  app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
+  appPackage: "com.nbaimd.gametime.nba2011"
+  appActivity: "com.neulion.nba.ui.activity.SplashActivity"
+  deviceName: "EmulatorTablet"
+
+00abfa707d90c521:
+  udid: "00abfa707d90c521"
+  port: "4727"
+  platformName: "Android"
+  platformVersion: "8.1.0"
+  app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
+  appPackage: "com.nbaimd.gametime.nba2011"
+  appActivity: "com.neulion.nba.ui.activity.SplashActivity"
+  deviceName: "Neuxs5x_QA-055"
+
+53b57478:
+  udid: "53b57478"
+  port: "4728"
+  platformName: "Android"
+  platformVersion: "8.0.0"
+  app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
+  appPackage: "com.nbaimd.gametime.nba2011"
+  appActivity: "com.neulion.nba.ui.activity.SplashActivity"
+  deviceName: "S7edge"
+
+FA68Z0304192:
+  udid: "FA68Z0304192"
+  port: "4729"
+  platformName: "Android"
+  platformVersion: "8.1.0"
+  app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
+  appPackage: "com.nbaimd.gametime.nba2011"
+  appActivity: "com.neulion.nba.ui.activity.SplashActivity"
+  deviceName: "Pixel_QA-062"
+
+430083dcd3fec057:
+  udid: "430083dcd3fec057"
+  port: "4730"
+  platformName: "Android"
+  platformVersion: "4.4.2"
+  app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
+  appPackage: "com.nbaimd.gametime.nba2011"
+  appActivity: "com.neulion.nba.ui.activity.SplashActivity"
+  deviceName: "SumsungTablet_QA-020"
+
+a727d61002cb747c:
+  udid: "a727d61002cb747c"
+  port: "4731"
+  platformName: "Android"
+  platformVersion: "7.0.0"
+  app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
+  appPackage: "com.nbaimd.gametime.nba2011"
+  appActivity: "com.neulion.nba.ui.activity.SplashActivity"
+  deviceName: "sumsungTablet_QA-064"
+
+HT4ANJT05081:
+  udid: "HT4ANJT05081"
+  port: "4730"
+  platformName: "Android"
+  platformVersion: "7.1.1"
+  app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
+  appPackage: "com.nbaimd.gametime.nba2011"
+  appActivity: "com.neulion.nba.ui.activity.SplashActivity"
+  deviceName: "NexusTablet_QA-051"
+
+
+
+

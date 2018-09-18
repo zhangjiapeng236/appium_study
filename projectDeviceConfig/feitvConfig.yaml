@@ -1,0 +1,53 @@
+192.168.147.101:5555:
+  udid: "192.168.147.101:5555"
+  port: "4725"
+  platformName: "Android"
+  platformVersion: "7.1.1"
+  app: "C://Users//james//Desktop//monkeyrunner//feitv_dev.apk"
+  appPackage: "ptv.fei"
+  appActivity: "com.neulion.feitv.ui.activity.impl.MainActivity"
+  deviceName: "Android Emulator"
+
+192.168.147.102:5555:
+  udid: "192.168.147.102:5555"
+  port: "4726"
+  platformName: "Android"
+  platformVersion: "7.1.1"
+  app: "C://Users//james//Desktop//monkeyrunner//feitv_dev.apk"
+  appPackage: "ptv.fei"
+  appActivity: "com.neulion.feitv.ui.activity.impl.MainActivity"
+  deviceName: "Android Emulator"
+
+00abfa707d90c521:
+  udid: "00abfa707d90c521"
+  port: "4727"
+  platformName: "Android"
+  platformVersion: "8.1.0"
+  app: "C://Users//james//Desktop//monkeyrunner//feitv_dev.apk"
+  appPackage: "ptv.fei"
+  appActivity: "com.neulion.feitv.ui.activity.impl.MainActivity"
+  deviceName: "QA-055"
+
+53b57478:
+  udid: "53b57478"
+  port: "4725"
+  platformName: "Android"
+  platformVersion: "8.0.0"
+  app: "C://Users//james//Desktop//monkeyrunner//feitv_dev.apk"
+  appPackage: "ptv.fei"
+  appActivity: "com.neulion.feitv.ui.activity.impl.MainActivity"
+  deviceName: "SumsungS7"
+
+FA68Z0304192:
+  udid: "FA68Z0304192"
+  port: "4729"
+  platformName: "Android"
+  platformVersion: "8.1.0"
+  app: "C://Users//james//Desktop//monkeyrunner//feitv_dev.apk"
+  appPackage: "ptv.fei"
+  appActivity: "com.neulion.feitv.ui.activity.impl.SplashActivity"
+  deviceName: "Pixel_QA-062"
+
+
+
+
