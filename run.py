@@ -16,7 +16,7 @@ if __name__ == '__main__':
         else:
             serials = serials + re.findall('(.*)\tdevice', i)
     for serial in serials:
-        device = myThread(serial,case2)
+        device = myThread(serial,case1)
         device.start()
         print("start! {}".format(serial))
 

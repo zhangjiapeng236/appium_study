@@ -1,0 +1,10 @@
+#login page
+qaConfig: "android:id/button2"
+smartLock: "//*[@text='NONE OF THE ABOVE']"
+userBox: "com.nbaimd.gametime.nba2011:id/register_useremailaddress"
+passwordBox: "com.nbaimd.gametime.nba2011:id/login_password"
+siginButton: "com.nbaimd.gametime.nba2011:id/sign_in_button"
+loginSuccess: ".//*[contains(@text,'Login successful!')]"
+
+#onboarding page
+enterSigin: "com.nbaimd.gametime.nba2011:id/sign"

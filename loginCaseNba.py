@@ -20,9 +20,9 @@ class testCase1(ParametrizedTestCase):
         self.device = initDevice('projectDeviceConfig\\nbaConfig.yaml',self.param)
         self.driver = self.device.getDeriver()
         lock.release()
-        self.myDriver = MyFindElement(self.driver)
+        self.myDriver = MyFindElement(self.driver,"elementsConfig\\nba.yaml")
         try:
-            self.myDriver.findElement("xpath","//*[@text='OK']").click()
+            self.myDriver.findElement("id","qaConfig").click()
         except Exception:
             print("Config is not qa!")
             pass
@@ -35,22 +35,18 @@ class testCase1(ParametrizedTestCase):
         time.sleep(3)
 
     def test_loginSuccess(self):
-            self.myDriver.findElement("id", "com.nbaimd.gametime.nba2011:id/sign").click()
+            self.myDriver.findElement("id", "enterSigin").click()
             try:
-                self.myDriver.findElement("xpath", "//*[@text='NONE OF THE ABOVE']").click()
+                self.myDriver.findElement("xpath", "smartLock").click()
             except Exception:
                 print("APP not show smart lock")
                 pass
 
-            self.myDriver.findElement("id", "com.nbaimd.gametime.nba2011:id/register_useremailaddress").send_keys(
-                "eloy@0831@qq.com")
-            self.myDriver.findElement("id", "com.nbaimd.gametime.nba2011:id/login_password").send_keys("111111")
-            self.myDriver.findElement("id", "com.nbaimd.gametime.nba2011:id/sign_in_button").click()
-
-            toast_loc = ("xpath", ".//*[contains(@text,'Login successful!')]")
-            element = WebDriverWait(self.driver, 20, 0.1).until(EC.presence_of_element_located(toast_loc))
-            print(element.text)
-
+            self.myDriver.findElement("id", "userBox").send_keys(
+                "eloy0831@qq.com")
+            self.myDriver.findElement("id", "passwordBox").send_keys("111111")
+            self.myDriver.findElement("id", "siginButton").click()
+            self.myDriver.is_toast_exist("Login successful!")
 
 
 
