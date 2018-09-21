@@ -1,9 +1,9 @@
 #-*- encoding:utf-8 -*-
+from testCase.Feitv_loginCase import *
 import socket
 import subprocess
 import os
 import time
-from loginCaseFeitv import *
 
 
 
@@ -16,6 +16,8 @@ class AppiumServer():
             s.connect((host, int(port)))
             s.shutdown(2)
             print('port %s is uesd !' %port)
+            # killport(int(port))
+            # time.sleep(2)
             return False
         except:
             print('port %s is available!' %port)
@@ -24,7 +26,6 @@ class AppiumServer():
     #Launch Appium server
     def start_appium(self,host,port):
         errormessage=""
-        appium_server_url=""
         bootstrap_port=str(int(port)+10)
 
         try:

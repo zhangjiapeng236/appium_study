@@ -1,10 +1,31 @@
+# permission
+allow: "com.android.packageinstaller:id/permission_allow_button"
+deny: "com.android.packageinstaller:id/permission_deny_button"
+
 #login page
 qaConfig: "android:id/button2"
 smartLock: "//*[@text='NONE OF THE ABOVE']"
 userBox: "com.nbaimd.gametime.nba2011:id/register_useremailaddress"
 passwordBox: "com.nbaimd.gametime.nba2011:id/login_password"
 siginButton: "com.nbaimd.gametime.nba2011:id/sign_in_button"
+forgotPassword: "com.nbaimd.gametime.nba2011:id/sign_in_btn_forget_password"
+forgotUsername: "com.nbaimd.gametime.nba2011:id/forget_password_username"
+sendButton: "com.nbaimd.gametime.nba2011:id/forget_password_submit_button"
+resetSigin: "com.nbaimd.gametime.nba2011:id/reset_password_success_log_in_button"
+resetFailed: ".//*[contains(@text,'We were unable to verify this email. Please enter the email address which you registered with NBA LEAGUE PASS.')]"
 loginSuccess: ".//*[contains(@text,'Login successful!')]"
+loginFailed: ".//*[contains(@text,'We were unable to verify this username. Please enter your NBA LEAGUE PASS username.')]"
+inputError: "com.nbaimd.gametime.nba2011:id/textinput_error"
+
 
 #onboarding page
 enterSigin: "com.nbaimd.gametime.nba2011:id/sign"
+DL: "com.nbaimd.gametime.nba2011:id/image_view"
+myFavTeam: "(//android.support.v7.widget.RecyclerView[@resource-id='com.nbaimd.gametime.nba2011:id/my_fav_team_list']/android.widget.FrameLayout)[1]"
+favTeam: "(//android.support.v7.widget.RecyclerView[@resource-id='com.nbaimd.gametime.nba2011:id/fav_team_list']/android.widget.FrameLayout)[1]"
+myFavTeamText: "com.nbaimd.gametime.nba2011:id/favorite_player_error_msg"
+maxFavTeam: ".//*[contains(@text,'The number of your favorites has reached the maximum.')]"
+skipButton: "com.nbaimd.gametime.nba2011:id/onboarding_skip"
+continueButton: "com.nbaimd.gametime.nba2011:id/onboarding_continue"
+notificationSwitch: "com.nbaimd.gametime.nba2011:id/setting_checkbox"
+notificationRoll: "com.nbaimd.gametime.nba2011:id/setting_recycleview"

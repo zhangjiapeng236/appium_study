@@ -1,9 +1,8 @@
 import re
+import os
 from myThread import *
-from loginCaseNba import testCase1 as case1
-from onboardingCaseNba import testCase1 as case2
-
-
+from testCase.NBA_onboardingCase import testCase as case2
+from testCase.NBA_accountCase import testCase1 as case1
 
 
 if __name__ == '__main__':
@@ -15,9 +14,12 @@ if __name__ == '__main__':
             pass
         else:
             serials = serials + re.findall('(.*)\tdevice', i)
-    for serial in serials:
-        device = myThread(serial,case1)
-        device.start()
-        print("start! {}".format(serial))
+    if len(serials) == 0:
+        print("Current can't find any device connected!")
+    else:
+        for serial in serials:
+            device = myThread(serial, case2)
+            device.start()
+            print("start! {}".format(serial))
 
 

@@ -2,6 +2,7 @@ import yaml
 from appium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from appiumServer import *
+import time
 
 class initDevice():
     desired_caps = {}
@@ -21,14 +22,12 @@ class initDevice():
         self.desired_caps['automationName'] = 'Uiautomator2' #for get toast info
         #desired_caps['unicodeKeyboard'] = True
         #desired_caps['resetKeyboard'] = True
-        self.s = AppiumServer()
-        self.s.start_appium('127.0.0.1', self.port)
-        time.sleep(3)
 
     def getDeriver(self):
         self.driver = webdriver.Remote('http://127.0.0.1:{}/wd/hub'.format(self.port), self.desired_caps)
         appium_server_url = 'http://127.0.0.1:{}/wd/hub'.format(self.port)
         print('Connect {} successful!'.format(appium_server_url))
+        time.sleep(1)
         return self.driver
 
     def getPort(self):
