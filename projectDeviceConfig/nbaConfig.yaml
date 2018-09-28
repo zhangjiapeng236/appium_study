@@ -1,6 +1,7 @@
 192.168.147.101:5555:
   udid: "192.168.147.101:5555"
   port: "4725"
+  systemPort: "8200"
   platformName: "Android"
   platformVersion: "7.1.1"
   app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
@@ -11,6 +12,7 @@
 192.168.147.102:5555:
   udid: "192.168.147.102:5555"
   port: "4726"
+  systemPort: "8201"
   platformName: "Android"
   platformVersion: "7.1.1"
   app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
@@ -21,6 +23,7 @@
 00abfa707d90c521:
   udid: "00abfa707d90c521"
   port: "4727"
+  systemPort: "8202"
   platformName: "Android"
   platformVersion: "8.1.0"
   app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
@@ -31,6 +34,7 @@
 53b57478:
   udid: "53b57478"
   port: "4728"
+  systemPort: "8203"
   platformName: "Android"
   platformVersion: "8.0.0"
   app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
@@ -41,6 +45,7 @@
 FA68Z0304192:
   udid: "FA68Z0304192"
   port: "4729"
+  systemPort: "8204"
   platformName: "Android"
   platformVersion: "8.1.0"
   app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
@@ -51,6 +56,7 @@ FA68Z0304192:
 430083dcd3fec057:
   udid: "430083dcd3fec057"
   port: "4730"
+  systemPort: "8205"
   platformName: "Android"
   platformVersion: "4.4.2"
   app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
@@ -61,6 +67,7 @@ FA68Z0304192:
 a727d61002cb747c:
   udid: "a727d61002cb747c"
   port: "4731"
+  systemPort: "8206"
   platformName: "Android"
   platformVersion: "7.0.0"
   app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
@@ -71,12 +78,25 @@ a727d61002cb747c:
 HT4ANJT05081:
   udid: "HT4ANJT05081"
   port: "4730"
+  systemPort: "8207"
   platformName: "Android"
   platformVersion: "7.1.1"
   app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
   appPackage: "com.nbaimd.gametime.nba2011"
   appActivity: "com.neulion.nba.ui.activity.SplashActivity"
   deviceName: "NexusTablet_QA-051"
+
+FA7B91A04880:
+  udid: "FA7B91A04880"
+  port: "4731"
+  systemPort: "8208"
+  platformName: "Android"
+  platformVersion: "9.0.0"
+  app: "C://Users//james//Desktop//monkeyrunner//nba_qa.apk"
+  appPackage: "com.nbaimd.gametime.nba2011"
+  appActivity: "com.neulion.nba.ui.activity.SplashActivity"
+  deviceName: "pixel 2"
+
 
 
 

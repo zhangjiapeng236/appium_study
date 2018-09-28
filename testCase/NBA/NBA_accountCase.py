@@ -29,9 +29,10 @@ class testCase1(ParametrizedTestCase):
     def tearDown(self):
         self.driver.close_app()
         self.driver.quit()
-        # port = self.device.getPort()
-        # killport(port)
-        # time.sleep(3)
+        pass
+
+
+
 
     #@unittest.skip("not need")
     @data(["eloy0831@qq.com","111111"],[" eloy0916@qq.com ","111111"])
@@ -48,7 +49,13 @@ class testCase1(ParametrizedTestCase):
             self.myDriver.findElement("id", "siginButton").click()
             self.myDriver.is_toast_exist("loginSuccess")
 
-    #@unittest.skip("not need")
+
+
+
+
+
+
+    @unittest.skip("not need")
     @data(["eloy0131@qq.com", "111111"],["eloy0116@qq.com", "111111"])
     @unpack
     def test_loginFail(self, user, psw):
@@ -63,7 +70,7 @@ class testCase1(ParametrizedTestCase):
         self.myDriver.findElement("id", "siginButton").click()
         self.myDriver.is_toast_exist("loginFailed")
 
-    #@unittest.skip("not need")
+    @unittest.skip("not need")
     @data(["eloy", "111111"],["eloy0116@qq.com", ""],["","11111"],["#$%^", "23"])
     @unpack
     def test_loginError(self, user, psw):
@@ -81,7 +88,7 @@ class testCase1(ParametrizedTestCase):
         except Exception as errorMsg:
             print(errorMsg)
 
-    #@unittest.skip("not need")
+    @unittest.skip("not need")
     @data(["eloy08311@qq.com"],["eloy"],["eloy0831@qq.com"],[""])
     @unpack
     def test_forgotPassword(self, user):

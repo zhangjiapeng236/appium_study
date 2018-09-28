@@ -20,6 +20,7 @@ class initDevice():
         self.desired_caps['udid'] = desired['udid']
         self.port= desired['port']
         self.desired_caps['automationName'] = 'Uiautomator2' #for get toast info
+        self.desired_caps['systemPort'] = 'systemPort' # default 8200，limt 8200-8209
         #desired_caps['unicodeKeyboard'] = True
         #desired_caps['resetKeyboard'] = True
 

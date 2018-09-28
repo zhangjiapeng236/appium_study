@@ -1,11 +1,8 @@
 #-*- encoding:utf-8 -*-
-from testCase.Feitv_loginCase import *
+import os
 import socket
 import subprocess
-import os
 import time
-
-
 
 
 class AppiumServer():

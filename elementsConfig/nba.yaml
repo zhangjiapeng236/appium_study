@@ -1,6 +1,13 @@
 # permission
 allow: "com.android.packageinstaller:id/permission_allow_button"
 deny: "com.android.packageinstaller:id/permission_deny_button"
+ignoge: "//*[@text='IGNOGE']"
+sysButton1: "android:id/button1"
+sysButton2: "android:id/button2"
+sysButton3: "android:id/button3"
+
+#main page
+enterMyAccount: "com.nbaimd.gametime.nba2011:id/account"
 
 #login page
 qaConfig: "android:id/button2"
@@ -16,7 +23,7 @@ resetFailed: ".//*[contains(@text,'We were unable to verify this email. Please e
 loginSuccess: ".//*[contains(@text,'Login successful!')]"
 loginFailed: ".//*[contains(@text,'We were unable to verify this username. Please enter your NBA LEAGUE PASS username.')]"
 inputError: "com.nbaimd.gametime.nba2011:id/textinput_error"
-
+getStartedButton: "com.nbaimd.gametime.nba2011:id/carousel_onboarding_create_account"
 
 #onboarding page
 enterSigin: "com.nbaimd.gametime.nba2011:id/sign"
@@ -25,7 +32,18 @@ myFavTeam: "(//android.support.v7.widget.RecyclerView[@resource-id='com.nbaimd.g
 favTeam: "(//android.support.v7.widget.RecyclerView[@resource-id='com.nbaimd.gametime.nba2011:id/fav_team_list']/android.widget.FrameLayout)[1]"
 myFavTeamText: "com.nbaimd.gametime.nba2011:id/favorite_player_error_msg"
 maxFavTeam: ".//*[contains(@text,'The number of your favorites has reached the maximum.')]"
-skipButton: "com.nbaimd.gametime.nba2011:id/onboarding_skip"
+skipButton: "com.nbaimd.gametime.nba2011:id/carousel_onboarding_skip"
+skipButton_: "com.nbaimd.gametime.nba2011:id/onboarding_skip"
 continueButton: "com.nbaimd.gametime.nba2011:id/onboarding_continue"
 notificationSwitch: "com.nbaimd.gametime.nba2011:id/setting_checkbox"
 notificationRoll: "com.nbaimd.gametime.nba2011:id/setting_recycleview"
+
+#MY Account page
+myFavorites: "com.nbaimd.gametime.nba2011:id/favorites"
+favSigin: "com.nbaimd.gametime.nba2011:id/go_sign_in"
+favVideos: "android.widget.FrameLayout"
+favVideoStar: "(.//*[@resource-id='com.nbaimd.gametime.nba2011:id/video_favorite'])[1]"
+favVideoStars: ".//*[@resource-id='com.nbaimd.gametime.nba2011:id/video_favorite']"
+favVideoShare: "(.//*[@resource-id='com.nbaimd.gametime.nba2011:id/video_share'])[1]"
+favVideoShares: ".//*[@resource-id='com.nbaimd.gametime.nba2011:id/video_share']"
+favVideoList: "com.nbaimd.gametime.nba2011:id/video_list"

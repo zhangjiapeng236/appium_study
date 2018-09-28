@@ -1,0 +1,16 @@
+#permission
+allow: "//*[@text='ALLOW']"
+
+#home
+search: "ptv.fei:id/search_view"
+searchText: "ptv.fei:id/search_src_text"
+enterMenu: "android.widget.ImageButton"
+
+#menu
+enterSigin: "ptv.fei:id/menu_master_container"
+
+#sigin
+username: "ptv.fei:id/login_username"
+password: "ptv.fei:id/login_password"
+siginButton: "ptv.fei:id/sign_in_button"
+loginSuccess: ".//*[contains(@text,'You have been signed in successfully!')]"

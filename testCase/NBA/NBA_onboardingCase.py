@@ -30,12 +30,10 @@ class testCase(ParametrizedTestCase):
     def tearDown(self):
         self.driver.close_app()
         self.driver.quit()
-        # port = self.device.getPort()
-        # killport(port)
-        # time.sleep(3)
+        pass
 
 
-    @unittest.skip("not need")
+    # @unittest.skip("not need")
     def test_onboarding_DL(self):
         for i in range(3):
             for i in range(2):
@@ -105,10 +103,9 @@ class testCase(ParametrizedTestCase):
         elements = self.myDriver.findElements("id", "notificationSwitch")
         for i in range(len(elements)):
             elements[i].click()
-        location = self.myDriver.findElement("id", "notificationRoll").location
-        size = self.myDriver.findElement("id", "notificationRoll").size
-        self.driver.swipe(location['x']+size['width']/2,location['y'] + size['height']*0.8\
-                ,location['x']+size['width']/2, location['y'], 500)
+        location = self.myDriver.findElement_location("id", "notificationRoll")
+        self.driver.swipe(location['x']+location['width']/2,location['y'] + location['height']*0.8\
+                ,location['x']+location['width']/2, location['y'], 500)
         elements = self.myDriver.findElements("id", "notificationSwitch")
         for i in range(len(elements)):
             elements[i].click()

@@ -1,6 +1,7 @@
 192.168.147.101:5555:
   udid: "192.168.147.101:5555"
   port: "4725"
+  systemPort: "8200"
   platformName: "Android"
   platformVersion: "7.1.1"
   deviceName: "EmulatorPhone"
@@ -8,6 +9,7 @@
 192.168.147.102:5555:
   udid: "192.168.147.102:5555"
   port: "4726"
+  systemPort: "8201"
   platformName: "Android"
   platformVersion: "7.1.1"
   deviceName: "EmulatorTablet"
@@ -15,6 +17,7 @@
 00abfa707d90c521:
   udid: "00abfa707d90c521"
   port: "4727"
+  systemPort: "8202"
   platformName: "Android"
   platformVersion: "8.1.0"
   deviceName: "Neuxs5x_QA-055"
@@ -22,6 +25,7 @@
 53b57478:
   udid: "53b57478"
   port: "4728"
+  systemPort: "8203"
   platformName: "Android"
   platformVersion: "8.0.0"
   deviceName: "S7edge"
@@ -29,6 +33,7 @@
 FA68Z0304192:
   udid: "FA68Z0304192"
   port: "4729"
+  systemPort: "8204"
   platformName: "Android"
   platformVersion: "8.1.0"
   deviceName: "Pixel_QA-062"
@@ -36,6 +41,7 @@ FA68Z0304192:
 430083dcd3fec057:
   udid: "430083dcd3fec057"
   port: "4730"
+  systemPort: "8205"
   platformName: "Android"
   platformVersion: "4.4.2"
   deviceName: "SumsungTablet_QA-020"
@@ -43,6 +49,7 @@ FA68Z0304192:
 a727d61002cb747c:
   udid: "a727d61002cb747c"
   port: "4731"
+  systemPort: "8206"
   platformName: "Android"
   platformVersion: "7.0.0"
   deviceName: "sumsungTablet_QA-064"
@@ -50,9 +57,18 @@ a727d61002cb747c:
 HT4ANJT05081:
   udid: "HT4ANJT05081"
   port: "4730"
+  systemPort: "8207"
   platformName: "Android"
   platformVersion: "7.1.1"
   deviceName: "NexusTablet_QA-051"
+
+FA7B91A04880:
+  udid: "FA7B91A04880"
+  port: "4731"
+  systemPort: "8208"
+  platformName: "Android"
+  platformVersion: "9.0.0"
+  deviceName: "pixel 2"
 
 
 
