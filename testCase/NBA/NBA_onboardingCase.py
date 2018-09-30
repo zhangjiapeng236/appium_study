@@ -8,12 +8,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from myFindElement import MyFindElement
+from ddt import ddt,data,unpack
 lock = Lock()
 
 
 
-
-class testCase(ParametrizedTestCase):
+@ddt
+class testSuit_onboarding_UI(ParametrizedTestCase):
 
     def setUp(self):
         lock.acquire()
@@ -37,25 +38,24 @@ class testCase(ParametrizedTestCase):
     def test_onboarding_DL(self):
         for i in range(3):
             for i in range(2):
-                location = self.myDriver.findElement("id","DL").location
-                size = self.myDriver.findElement("id","DL").size
+                location = self.myDriver.findElement_location("id","DL")
                 x = location['x']
                 y = location['y']
-                width = size['width']
+                width = location['width']
                 self.driver.swipe(x + width * 0.8, y, x, y, 500 )
                 time.sleep(2)
             for i in range(2):
-                location = self.myDriver.findElement("id", "DL").location
-                size = self.myDriver.findElement("id","DL").size
+                location = self.myDriver.findElement_location("id", "DL")
                 x = location['x']
                 y = location['y']
-                width = size['width']
-                height = size['height']
+                width = location['width']
                 self.driver.swipe(x, y, x + width * 0.8, y, 500)
                 time.sleep(2)
 
-    @unittest.skip("not need")
-    def test_myFavoriteTeam(self):
+    # @unittest.skip("not need")
+    @data(["eloy0831@qq.com", "111111"])
+    @unpack
+    def test_onboarding_myFavoriteTeam(self, user, psw):
         #login an account
         self.myDriver.findElement("id", "enterSigin").click()
         try:
@@ -63,28 +63,35 @@ class testCase(ParametrizedTestCase):
         except Exception:
             print("APP not show smart lock")
             pass
-        self.myDriver.findElement("id", "userBox").send_keys(
-            "eloy0831@qq.com")
-        self.myDriver.findElement("id", "passwordBox").send_keys("111111")
+        self.myDriver.findElement("id", "userBox").send_keys(user)
+        self.myDriver.findElement("id", "passwordBox").send_keys(psw)
         self.myDriver.findElement("id", "siginButton").click()
         #Enter to my favorite team page, remove my fav team
         try:
+            counter = 0
             while True:
-                self.myDriver.findElement("xpath","myFavTeam").click()
-                print("Remove a team successfully!")
-        except Exception:
+                self.myDriver.findElement("xpath","favTeam").click()
+                counter += 1
+                # print("Remove a team successfully!")
+        except Exception as eMsg:
             errorMsg = self.myDriver.findElement("id","myFavTeamText").text
-            print(errorMsg)
-
+            msgRef = "No content is available at this time. Please check back later."
+            msgRef_ = "You currently have no \"Favorite\" teams.  Tap a team to \"Favorite\"."
+            if counter > 0:
+                self.assertEqual(errorMsg, msgRef_, msg="Error Message is worng!")
+            else:
+                self.assertEqual(errorMsg, msgRef, msg="Error Message is worng!")
         #add my fav team
         for i in range(6):
-            self.myDriver.findElement("xpath", "favTeam").click()
-            print("Add a team successfully!")
+            self.myDriver.findElement("xpath", "team").click()
+            # print("Add a team successfully!")
         self.myDriver.is_toast_exist("maxFavTeam")
-        self.myDriver.findElement("id","skipButton").click()
 
-    #@unittest.skip("no need")
-    def test_notifications(self):
+
+    # @unittest.skip("no need")
+    @data(["eloy0831@qq.com", "111111"])
+    @unpack
+    def test_onboarding_notifications(self, user, psw):
         # login an account
         self.myDriver.findElement("id", "enterSigin").click()
         try:
@@ -92,9 +99,8 @@ class testCase(ParametrizedTestCase):
         except Exception:
             print("APP not show smart lock")
             pass
-        self.myDriver.findElement("id", "userBox").send_keys(
-            "eloy0831@qq.com")
-        self.myDriver.findElement("id", "passwordBox").send_keys("111111")
+        self.myDriver.findElement("id", "userBox").send_keys(user)
+        self.myDriver.findElement("id", "passwordBox").send_keys(psw)
         self.myDriver.findElement("id", "siginButton").click()
         self.myDriver.is_toast_exist("loginSuccess")
         # enter to notification page

@@ -1,4 +1,5 @@
 # permission
+backButton: "android.widget.ImageButton"
 allow: "com.android.packageinstaller:id/permission_allow_button"
 deny: "com.android.packageinstaller:id/permission_deny_button"
 ignoge: "//*[@text='IGNOGE']"
@@ -8,6 +9,14 @@ sysButton3: "android:id/button3"
 
 #main page
 enterMyAccount: "com.nbaimd.gametime.nba2011:id/account"
+
+#register page
+registerScorll: "com.nbaimd.gametime.nba2011:id/register_scrollview"
+registerPswBox: "com.nbaimd.gametime.nba2011:id/register_userpwd"
+checkBoxs: "android.widget.CheckBox"
+creatAccount: "com.nbaimd.gametime.nba2011:id/register_create_account"
+cancel: "com.nbaimd.gametime.nba2011:id/register_cancel_button"
+creatAccountSuccess: ".//*[contains(@text,'You have successfully created an Account!')]"
 
 #login page
 qaConfig: "android:id/button2"
@@ -21,15 +30,16 @@ sendButton: "com.nbaimd.gametime.nba2011:id/forget_password_submit_button"
 resetSigin: "com.nbaimd.gametime.nba2011:id/reset_password_success_log_in_button"
 resetFailed: ".//*[contains(@text,'We were unable to verify this email. Please enter the email address which you registered with NBA LEAGUE PASS.')]"
 loginSuccess: ".//*[contains(@text,'Login successful!')]"
-loginFailed: ".//*[contains(@text,'We were unable to verify this username. Please enter your NBA LEAGUE PASS username.')]"
+loginNotFound: ".//*[contains(@text,'We were unable to verify this username.  Please enter your NBA LEAGUE PASS username.')]"
 inputError: "com.nbaimd.gametime.nba2011:id/textinput_error"
 getStartedButton: "com.nbaimd.gametime.nba2011:id/carousel_onboarding_create_account"
 
 #onboarding page
 enterSigin: "com.nbaimd.gametime.nba2011:id/sign"
+getStarted: "com.nbaimd.gametime.nba2011:id/carousel_onboarding_create_account"
 DL: "com.nbaimd.gametime.nba2011:id/image_view"
-myFavTeam: "(//android.support.v7.widget.RecyclerView[@resource-id='com.nbaimd.gametime.nba2011:id/my_fav_team_list']/android.widget.FrameLayout)[1]"
-favTeam: "(//android.support.v7.widget.RecyclerView[@resource-id='com.nbaimd.gametime.nba2011:id/fav_team_list']/android.widget.FrameLayout)[1]"
+myFavTeam: "//android.support.v7.widget.RecyclerView[@resource-id='com.nbaimd.gametime.nba2011:id/my_fav_team_list']/
+android.widget.FrameLayout[1]"
 myFavTeamText: "com.nbaimd.gametime.nba2011:id/favorite_player_error_msg"
 maxFavTeam: ".//*[contains(@text,'The number of your favorites has reached the maximum.')]"
 skipButton: "com.nbaimd.gametime.nba2011:id/carousel_onboarding_skip"
@@ -39,7 +49,10 @@ notificationSwitch: "com.nbaimd.gametime.nba2011:id/setting_checkbox"
 notificationRoll: "com.nbaimd.gametime.nba2011:id/setting_recycleview"
 
 #MY Account page
-myFavorites: "com.nbaimd.gametime.nba2011:id/favorites"
+videoTap: ".//*[contains(@text,'VIDOES')]"
+teamsTap: ".//*[contains(@text,'TEAMS')]"
+playersTap: ".//*[contains(@text,'PLAYERS')]"
+#videos
 favSigin: "com.nbaimd.gametime.nba2011:id/go_sign_in"
 favVideos: "android.widget.FrameLayout"
 favVideoStar: "(.//*[@resource-id='com.nbaimd.gametime.nba2011:id/video_favorite'])[1]"
@@ -47,3 +60,44 @@ favVideoStars: ".//*[@resource-id='com.nbaimd.gametime.nba2011:id/video_favorite
 favVideoShare: "(.//*[@resource-id='com.nbaimd.gametime.nba2011:id/video_share'])[1]"
 favVideoShares: ".//*[@resource-id='com.nbaimd.gametime.nba2011:id/video_share']"
 favVideoList: "com.nbaimd.gametime.nba2011:id/video_list"
+#teams
+favTeams: "//android.support.v7.widget.RecyclerView[@resource-id=
+'com.nbaimd.gametime.nba2011:id/my_fav_team_list']/android.widget.FrameLayout"
+favTeam: "//android.support.v7.widget.RecyclerView[@resource-id=
+'com.nbaimd.gametime.nba2011:id/my_fav_team_list']/android.widget.FrameLayout[1]"
+teams: "//android.support.v7.widget.RecyclerView[@resource-id=
+'com.nbaimd.gametime.nba2011:id/fav_team_list']/android.widget.FrameLayout"
+team: "//android.support.v7.widget.RecyclerView[@resource-id=
+'com.nbaimd.gametime.nba2011:id/fav_team_list']/android.widget.FrameLayout[1]"
+favTeamDelSuccess: ".//*[contains(@text,'')]"
+favTeamList: "com.nbaimd.gametime.nba2011:id/fav_team_list"
+favTeamError: "com.nbaimd.gametime.nba2011:id/favorite_player_error_msg"
+favPlayerError: "com.nbaimd.gametime.nba2011:id/favorite_player_error_msg"
+favPlayerTeamError: "com.nbaimd.gametime.nba2011:id/player_error_message"
+showAllPlayers: "com.nbaimd.gametime.nba2011:id/show_all_player"
+favPlayers: "//android.support.v7.widget.RecyclerView[@resource-id=
+com.nbaimd.gametime.nba2011:id/list_favorite_player]/android.widget.LinearLayout"
+playersList: "//android.support.v7.widget.RecyclerView[@resource-id=com.nbaimd.gametime.nba2011:id/fav_list_favorite_player]"
+player: "(//android.support.v7.widget.RecyclerView
+[@resource-id='com.nbaimd.gametime.nba2011:id/fav_list_favorite_player'])[1]/android.widget.LinearLayout[1]"
+
+
+#menu
+menuSigin: "com.nbaimd.gametime.nba2011:id/menu_sign_in"
+myFavorites: "com.nbaimd.gametime.nba2011:id/favorites"
+myDownloads: "com.nbaimd.gametime.nba2011:id/my_download"
+myWatchHistory: "com.nbaimd.gametime.nba2011:id/my_history"
+myPackages: "com.nbaimd.gametime.nba2011:id/my_package"
+messages: "com.nbaimd.gametime.nba2011:id/message"
+
+#My Packages Page
+myPackagesTitle: "//*[@text='My Packages']"
+packageLabel: "com.nbaimd.gametime.nba2011:id/package_label"
+packageName: "com.nbaimd.gametime.nba2011:id/package_name"
+packageHistoryLable: "com.nbaimd.gametime.nba2011:id/package_history_label"
+packageDescription: "com.nbaimd.gametime.nba2011:id/event"
+purchaseDate: "com.nbaimd.gametime.nba2011:id/date"
+gameEvent: "(//android.widget.TextView[@resource-id='com.nbaimd.gametime.nba2011:id/event'])[2]"
+gameDate: "(//android.widget.TextView[@resource-id='com.nbaimd.gametime.nba2011:id/date'])[2]"
+
+

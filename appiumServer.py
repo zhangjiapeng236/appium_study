@@ -13,8 +13,6 @@ class AppiumServer():
             s.connect((host, int(port)))
             s.shutdown(2)
             print('port %s is uesd !' %port)
-            # killport(int(port))
-            # time.sleep(2)
             return False
         except:
             print('port %s is available!' %port)
